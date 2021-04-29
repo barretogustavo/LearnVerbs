@@ -1,0 +1,338 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RESET xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx MENU DE NAVEGAÇÃO xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: #5a98e5;
+}
+ul{
+        width: 100%;
+        height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+        list-style: none;
+        font-family: sans-serif;
+        font-size: 20px;
+}
+
+
+li{
+    display: inline-block;
+    margin-left: 10px;;
+    padding: 15px;
+}
+
+li:hover a{
+    background-color: white;
+    color:#5a98e5;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:#5a98e5 ;
+   
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx BACKGROUND DO SITE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+section{
+    width: 100%;
+    height: 1000px;
+    background-color: #5a98e5;
+    display: flex;
+    justify-content: center;
+}
+/*AREA DO APP*/
+.app-area{
+    width: 700px;
+    height: 860px;
+    border-radius: 35px;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SCREEN 1 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.screen1{
+    height: 80%;
+    flex-direction: column;
+    display: none; /*Alterar para flex no JS -----------------------------------------------------------------------------------------------------*/
+    justify-content: center;
+    align-items: center;
+}
+            /*LOGO*/
+.screen1 .logo{
+    width: 400px;
+    margin-bottom: 200px;
+}
+
+            /*EMAIL AREA*/
+.email-input{       
+    background-color: white;
+    box-shadow: #c7d1dd 1px 1px 15px 0px;
+    width: 400px;
+    height: 45px;
+    border: transparent;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.email-input input{
+    width: 370px;
+    height: 40px;
+    border: transparent;
+    color:#5a98e5;
+    font-size: 14px;
+    font-family: 'rockwell';
+}
+input:focus{
+    border:0 none;
+    outline: none;
+}
+
+.email-input img{
+    width: 27px;
+    padding: 10px;
+}
+.screen1 .etapa1{
+    width: 40px;
+    margin-top: 35px;
+}
+            /*BUTTON AREA*/
+.button1{
+   width: 110px;
+   height: 50px;
+   margin-top: 100px;
+   background-color: white;
+   border-radius: 10px;
+   text-align: center;
+   color: #5a98e5;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.button1:hover{
+    cursor: pointer;
+    box-shadow: #c7d1dd 1px 1px 15px 0px;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SCREEN 2 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.screen2{
+    height: 80%;
+    flex-direction: column;
+    display: none; /*Alterar para flex no JS -----------------------------------------------------------------------------------------------------*/
+    justify-content: center;
+    align-items: center;
+}
+            /*LOGO*/
+.screen2 .logo2{
+    width: 400px;
+    margin-bottom: 200px;
+}
+.screen2 .etapa2{
+    width: 40px;
+    margin-top: 35px;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SCREEN 3 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.logo-area{
+    width: 100%;
+    display: flex; /*MUDAR PARA FLEX*/
+    justify-content: center;
+}
+.logo3{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    margin: 10px 0 15px 0;
+}
+
+.models{
+    display: none;
+}
+.screen3{
+    width: 700px;
+    height: 775px;
+    border-radius: 35px;
+    background-color: white;
+    display: flex; /*MUDAR PARA FLEX*/
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-y: auto !important;
+}
+                /*TITULO*/
+.ajuste--descricao{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+}
+.screen3 .verbos-estudados{
+    color:#3983df;
+    font-family: 'rockwell';
+    font-size: 22px;
+    margin-top: 25px;
+    text-align: center;
+}
+                /*DESCRIÇÃO*/
+.desc1{
+    color: #adadab;
+    font-size: 12px;
+    margin-left: 30px;
+}
+.desc2{
+    margin-left: 445px;
+    color: #adadab;
+    font-size: 12px;
+    margin-right: 40px;
+}
+                /*VERBO OBJETO*/
+.verbo-area{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+}
+.border-verbo{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #48e828;
+    margin-left: 30px;
+    padding: 5px;
+    width: 73%;
+}
+                        /*NOME DO VERBO*/
+#name-verbo{
+    color:#48e828;
+    font-size: 30px;
+    font-family: 'rockwell';
+    padding: 10px;
+    padding-right: 195px;
+}
+#name-verbo:hover{
+    cursor: pointer;
+}
+
+                        /*OPÇÃO DE RELEMBRAR*/
+.relembrar{
+    color: #CCC;
+    font-size: 13px;
+    font-family: 'rockwell';
+    margin-top: 20px;
+}
+.relembrar:hover{
+    cursor: pointer;
+    color: red;
+}
+
+                        /*ÍCONE DE CONCLUÍDO*/
+.check-icon{
+    width: 100px;
+    height: 70px;
+    margin-left: 15px;
+}
+
+.check-icon img{
+    width: 75px;
+    margin-left: 15px;
+}
+.check-icon img:hover{
+    cursor: pointer;
+}
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SCREEN 4 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+.screen4{
+    width: 700px;
+    height: 775px;
+    border-radius: 35px;
+    background-color: white;
+    display: none; /*MUDAR PARA FLEX*/
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.descTela4{
+    width: 100%;
+    height: 10px;
+    color: #adadab;
+    font-family: 'rockwell';
+    font-size: 13px;
+    text-align: center;
+    padding-top: 65px;
+}
+.verb-content{
+    color: #3983df;
+    font-size: 70px;
+    font-family: 'rockwell';
+    text-align: center;
+    width: 100%;
+}
+.ouvir-ingles{
+    margin-top: 50px;    
+}
+.iconsom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+}
+.iconsom:hover{
+    cursor: pointer;
+}
+.ouvir-ingles img{
+    width: 30px;
+}
+.ouvir-text{
+    color: black;
+    font-size: 13px;
+    font-family: 'rockwell';
+    text-align: center;
+    width: 100%;
+}
+.traducao{
+    width: 100%;
+    color: #adadab;
+    font-size: 13px;
+    font-family: 'rockwell';
+    text-align: center;
+    margin-top: 150px;
+}
+.traducao-content{
+    width: 100%;
+}
+.traducao-text{
+    color: #0c9646;
+    font-size: 70px;
+    font-family: 'rockwell';
+    text-align: center;
+}
+.button2{
+    width: 110px;
+   height: 50px;
+   margin-top: 100px;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0px 6px 16px -2px #adadab;
+   text-align: center;
+   color: #3983df;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.etapascreen4{
+    margin-top: 25px;
+    width: 30px;
+}
+.button2:hover{
+    cursor: pointer;
+    box-shadow: 0px 6px 16px -2px #77a1d5;
+}
