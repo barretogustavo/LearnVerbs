@@ -30,7 +30,8 @@
                         <input type="email" name="email" placeholder="Digite seu email">
                     </div>
                     <img class="etapa1" src="./img/step1.png">
-                <div class="button1">NEXT</div>
+                <div class="button1" onclick="nextScreen()">NEXT</div>
+                
             </div>
             <!-------------------------------------------------------- TELA 2 ----------------------------------------------------------->
             <div class="screen2">
@@ -40,34 +41,40 @@
                         <input type="date" name="age" >
                     </div>
                 <img class="etapa2" src="./img/step2.png">   
-                <div class="button1">NEXT</div>
+                    <div class="buttons">
+                        <div class="button1" onclick="backScreen3()">BACK</div>
+                        <div class="button1" onclick="nextScreen2()">NEXT</div>            
+                    </div>
             </div>
             <!-------------------------------------------------------- TELA 3 ----------------------------------------------------------->
             <div class="logo-area">
                 <img class="logo3" src="./img/logobranca.png">
             </div>
             
-                <div class="screen3">
+            <div class="screen3">
                     <!--AREA FIXA-->
+                    <div class="buttonBack" onclick="backScreen2()">Back</div>
                     <div class="ajuste--verbos-estudados">
-                        <p class="verbos-estudados">3/100 Learned verbs</p>
+                        <p class="verbos-estudados">10/10 Learned verbs</p>
                         <div class="ajuste--descricao">
                             <div class="desc1">VERBO EM INGLÊS</div>
                             <div class="desc2">CONCLUÍDOS</div>
                         </div>
                     </div>
-                    <!-------------------------------------------------- CONTEÚDO DO VERBO --------------------------------------------------->
+                    <!-------------------------------------------------- CONTEÚDO DO VERBO --------------------------------------------------->                       
                 <div class="models"> <!--Models para reorganizar a ordem das divs de verbo-->
                     <div class="verbo-area">
                         <div class="border-verbo">
-                            <a href=""><div id="name-verbo">To Teste</div></a>
+                            <a href=""><div id="name-verbo">TEMPLATE</div></a>
                             <div class="relembrar">RELEMBRAR</div>
                         </div>
-                        <div class="check-icon">
+                        <div class="check-icon" onclick="checked()" >
                             <img src="./img/checkicon-ok.png" alt="">
                         </div>
                     </div>    
                 </div>
+               
+
             </div>
                 <!-------------------------------------------------- TELA 4 --------------------------------------------------->
             <div class="screen4">
@@ -83,10 +90,31 @@
                 <div class="traducao-content">
                     <p class="traducao-text">Permitir</p>
                 </div>
-                <div class="button2">NEXT</div>
-                <img class="etapascreen4" src="./img/step1cinza.png" alt="">
+                <div class="buttons">
+                    <div class="button2" onclick="backScreen()">BACK</div>
+                    <div class="button2" onclick="nextScreen3()">NEXT</div>
+                </div>
+                <img class="etapascreen4" src="./img/step1cinza.png" alt="">                
+            </div>
+            <!-------------------------------------------------- TELA 5 --------------------------------------------------->
+            <div class="screen5">
+                <div class="descTela5">DIGITE CORRETAMENTE O VERBO QUE ESTÁ APRENDENDO</div>
+                <div class="digiteArea">
+                    <div class="div-digiteArea">
+                        <input type="text" name="verbo">
+                        <img src="./img/som.png" alt="">
+                    </div>
+                </div>
+                <div class="ajusteButton"><div class="buttonGo">GO</div></div>
+                <div class="descTela5--acertou">VOCÊ ACERTOU</div>
+                <div class="verboCorreto">Perguntar</div>
+                <div class="buttons">
+                    <div class="button2" onclick="backScreen4()">BACK</div>
+                    <div class="button2">NEXT</div>
+                </div>
                 
             </div>
+
         </div>
     </section>
     
